@@ -1,19 +1,10 @@
-html 
+doctype html 
+html
     head 
         title My Cv
+        link(rel="stylesheet", href="style.css")
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     body    
         .content 
-            .title-section Welcome to my CV
-        button.button-disc 
-            i.icon__youtube 
-            span.text-button Yt 
-        h1 Cosmin Negrut 
-        h2 Junior Web Developer 
-        h3 Info about me 
-        .box-shadow 
-            p I want to become a Web Developer because I wish to innovate and design.
-            p I like coding and I want to become a Full Stack Developer 
-        button.button-pill
-            i.icon__download 
-            span.text-button Get my CV
-            
+            .grid
+                include _component/about-me/about-me.pug 
